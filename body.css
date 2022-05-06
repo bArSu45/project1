@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+section{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    column-gap: 20%;
+    row-gap: 5%;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+img{
+
+    height: 180px;
+    width: 140px;
+    margin: auto;
+}
+#main-box{
+    margin-top: 5px;
+ 
+    height: 190px;
+    width: 160px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#div1{
+    text-align: center;
+    /* border: 2px solid teal; */
+    width: 168px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 3px;
+}
+#div2{
+    text-align: center;
+
+    width: 240px;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 3px; 
+    margin-top: 5px;
+}
+button{
+    height: 40px;
+    width: 300px;
+    color: white;
+    margin-top: 5px;
+    background-color: black;
+}
+#head{
+    width: 300px;
+    
+}
+#head img{
+    padding-left: 80px;
+}
+#head #div1{
+    padding-left: 60px;
+}
+#head #div2{
+    padding-left: 30px;
+}
+.start{
+    color: rgb(104, 104, 172);
+}
+.name{
+    color: black;
+    font-weight: bold;
+}
+.company{
+    color: gray;
+    font-size: 13px;
+    margin-top: 2px;
+    margin-bottom: 25px;
+    
+}
+.price{
+    color: black;
+    font-weight: bold;
+}
+
+.view{
+    color: red;
+    font-size: 14px;
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+
+#first{
+    border: 2px solid red;
+    height: 60px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+
+#img1{
+    height: 230px;
+    width: auto;
+   margin-left: 60px;
+}
+
+
+
+#container{
+    /* display: flex; */
+   width: 95%;
+   /* height:auto; */
+   /* border: 1px solid black; */
+   margin:auto
+   
+}
+.right{
+    width:20%;
+    /* height: auto; */
+    /* border: 1px solid black; */
+    
+}
