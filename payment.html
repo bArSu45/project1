@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div>Payment Gateway</div>
+    <form action="" id="form">
+        <label for="">User Name</label><br />
+        <input type="text" placeholder="Enter Your Name " name="" id="name"/><br/>
+        <label for="">Mobile Number</label><br />
+
+        <input type="number"  placeholder="Enter Your Number " name="" id="number"/><br/>
+        <label for="">Payment Method</label><br />
+
+        <select name="" id="type">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Razorpay">Razorpay</option>
+            <option value="Instamoja">Instamoja</option>
+        </select><br/>
+        <label for="">Valid Date</label><br />
+        <input type="text"  placeholder="vaild Date" name="" id="valid"/>
+        <label for="">Expire Date</label><br />
+        <input type="text"  placeholder="Expire Date" name="" id="expire"/>
+        <input type="submit"/>
+
+        
+
+
+
+
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("#form").addEventListener("submit",run);
+    function run(){
+        event.preventDefault();
+        var arr = [];;
+        var obj = {
+        name : document.querySelector("#name").value,
+        number : document.querySelector("#number").value,
+        method : document.querySelector("#type").value,
+        vaild : document.querySelector("#valid").value,
+        expire : document.querySelector("#expire").value
+
+        }
+        console.log(obj);
+        arr.push(obj);
+
+        localStorage.setItem("form",JSON.stringify(arr));
+        window.location.href = "proceed.html"
+        
+
+    }
+</script>

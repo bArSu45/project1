@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new/now</title>
+
+    <link href="//db.onlinewebfonts.com/c/3d801c16769ba2dd6344be073c5bb938?family=TradeGothicLTW01-Light"
+        rel="stylesheet" type="text/css" />
+        
+    <style>
+        @import url("//db.onlinewebfonts.com/c/3d801c16769ba2dd6344be073c5bb938?family=TradeGothicLTW01-Light");
+        @font-face {
+            font-family: "TradeGothicLTW01-Light";
+            src: url("//db.onlinewebfonts.com/t/3d801c16769ba2dd6344be073c5bb938.eot");
+            src: url("//db.onlinewebfonts.com/t/3d801c16769ba2dd6344be073c5bb938.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3d801c16769ba2dd6344be073c5bb938.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3d801c16769ba2dd6344be073c5bb938.woff") format("woff"), url("//db.onlinewebfonts.com/t/3d801c16769ba2dd6344be073c5bb938.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3d801c16769ba2dd6344be073c5bb938.svg#TradeGothicLTW01-Light") format("svg");
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .li {
+            margin-left: 60px;
+            margin-top: 20px;
+            color: rgba(144, 129, 129, 0.606);
+            font-weight:
+                400;
+            font-family:
+                Arial, sans-serif;
+        }
+
+        #head {
+            margin-left: 60px;
+            color: rgb(194, 172, 172);
+            font-weight:
+                400;
+            font-family:
+                Arial, sans-serif;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(193, 172, 172);
+            font-family:
+                Arial, sans-serif;
+            font-weight:
+                400;
+
+        }
+
+        #one {
+            color: black;
+        }
+
+        #flex #top {
+            padding-left: 100px;
+            padding-top: 39px;
+            font-size: 29px;
+            color: rgb(0, 0, 0);
+            font-family:
+                Arial, sans-serif;
+            /* font-weight:
+                100; */
+            text-decoration: underline;
+            text-underline-offset: 15px;
+
+        }
+
+        #flex {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        div .img {
+            padding-top: 60px;
+            padding-left: 100px;
+        }
+
+        .main_p {
+            margin-top: 10px;
+            margin-left: 150px;
+            font-size: 28px;
+            color: rgb(0, 0, 0);
+            font-family:
+                Arial, sans-serif;
+            font-weight:
+                200;
+        }
+
+        .p1 {
+            margin-top: 20px;
+            margin-left: 150px;
+            font-size: 20px;
+            color: rgb(134, 126, 126);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            font-weight:
+                20;
+        }
+
+        .p2 {
+            margin-top: 20px;
+            margin-left: 150px;
+            font-size: 20px;
+            color: rgb(134, 126, 126);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            font-weight:
+                20;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            /* border: 2px solid black; */
+            height: 600px;
+
+            margin-top: 190px;
+
+
+
+        }
+
+        .box {
+            /* background-color: blue; */
+            /* width:x; */
+            width: 280px;
+            margin-left: 50px;
+
+        }
+
+        .box :hover {
+            cursor: pointer;
+        }
+
+        #box-1 {
+            font-family: sans-serif;
+            color: rgb(110, 119, 119);
+
+        }
+
+        .icon {
+            height: 30 px;
+            width: 30px;
+            margin-top: 20px;
+            position: relative;
+            top: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 9px;
+
+        }
+
+        .first {
+            height: 30px;
+            width: 160px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        .enter {
+            position: relative;
+            top: 20px;
+            margin-left: 8px;
+        }
+
+        .btn {
+            height: 31px;
+            width: 60px;
+            background-color: black;
+            color: white;
+        }
+
+        #box-2 p {
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            padding-left: 25px;
+            color: rgb(110, 119, 119);
+        }
+
+        #box-3 p {
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            padding-left: 25px;
+            color: rgb(110, 119, 119);
+        }
+
+        #box-4 p {
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            padding-left: 25px;
+            color: rgb(110, 119, 119);
+        }
+
+        #box-5 p {
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            padding-left: 25px;
+            color: rgb(110, 119, 119);
+        }
+
+        #make {
+            height: 100px;
+            width: 330px;
+            margin-top: 20px;
+            margin-left: 0%;
+            margin-right: 10px;
+
+        }
+
+        .one {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 13px;
+            background-color: rgb(242, 242, 242);
+            padding-top: 40px;
+            color: rgb(132, 135, 137);
+            width: 1700px;
+
+
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 260px;
+            padding-left: 100px;
+            margin-bottom: 1%;
+
+        }
+
+        .grid11 {
+            /* border: 2px solid black; */
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            place-content: center;
+
+
+
+        }
+
+        .grid {
+            display: flex;
+            /* grid-template-columns: 1fr 1fr; */
+            height: 110px;
+            /* border: 2px solid rgb(182, 102, 164); */
+            background-color: pink;
+            gap: 0px;
+            width: 1080px;
+            margin-left: 170px;
+            row-gap: 0%;
+            column-gap: 0%;
+            /* padding-left: 90px; */
+            place-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+
+
+        }
+
+        .grid div {
+            border: 2px solid rgb(255, 241, 241);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(255, 255, 255);
+
+            height: 30px;
+            width: 200px;
+            margin-left: 20px;
+            text-align: center;
+            padding-top: 12px;
+            font-weight: 100;
+            /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+
+
+        }
+
+        .grid1 {
+
+            /* height: 432px; */
+            width: 700px;
+            /* border: 2px solid black; */
+            justify-content: space-around;
+            color: rgb(175, 172, 172);
+            font-size: 17px;
+            font-family: sans-serif;
+            display: flex;
+            margin-left: 150px;
+            margin-top: 20px;
+            justify-content: space-between;
+            /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+
+
+        }
+
+        #one,
+        #three,
+        #four,
+        #five,
+        #six {
+            margin-top: 40px;
+            color: black;
+        }
+
+        .li:hover {
+            cursor: pointer;
+        }
+
+        .last:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .grid div:hover {
+            cursor: pointer;
+
+        }
+
+        .grid11:hover {
+            cursor: pointer;
+        }
+    /* media query */
+    @media all and (max-width:750px) {
+      ul{
+         display: none;
+      }
+      }
+      @media all and (max-width:650px){
+    #flex{
+       display: block;
+       margin-left: 0%;
+
+    }
+    .img{
+        height: auto;
+        width: auto;
+    }
+    #top{
+        
+        text-decoration: underline;
+        text-underline-offset: 15px;
+
+    }
+    span{
+        display: none;
+    }
+
+      }
+    </style>
+</head>
+
+<body>
+    <div id="flex">
+        <div>
+            <div id="head">
+                <a href="">Home</a>&nbsp/ GIFTS
+            </div>
+            <ul type="none">
+                <li class="li" id="one">FEATURES</li>
+                <li class="li" id="two">Mother Day Gift</li>
+                <li class="li">Gift Sets</li>
+                <li class="li" id="three">GIFT BY PRICE</li>
+                <li class="li">$15 & Under Gift</li>
+                <li class="li">$30 & Under Gift </li>
+                <li class="li">$50 & Under Gift</li>
+                <li class="li" id="four">GIFT BY RECIPIENT</li>
+                <li class="li">Gift by Her </li>
+                <li class="li">Gift by Him </li>
+                <li class="li">Gift by Everyone </li>
+                <li class="li">Gift by The Hostess </li>
+                <li class="li" id="five">Collection </li>
+                <li class="li">Gift Boxes And Bags </li>
+                <li class="li">Accessories </li>
+                <li class="li" id="six">GIFT CARDS </li>
+                <li class="li">E-Gift Cards</li>
+                <li class="li">Gift Cards </li>
+
+
+
+
+
+
+
+
+
+            </ul>
+        </div >
+        <div id="media">
+            <p id="top"> Gift <span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+            </p>
+            <p><img class="img"
+                    src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwacddf680/images/Spring2022/xcat_gifts_0_sp1_lb.jpg?yocs=s_"
+                    alt=""></p>
+            <p><img class="img"
+                    src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw049e204d/images/Spring2022/xcat_give-love-mday_sp3_lb.jpg?yocs=s_"
+                    alt=""></p>
+            <div id="grid">
+                <div class="grid11"><img style="height: 250px; width: 320px;"
+                        src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw4a854cce/images/Spring2022/xcat_gifts-15_0_sp1_ls.jpg"
+                        alt=""></div>
+                <div class="grid11"><img style="height: 250px; width: 320px;"
+                        src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw5dad3108/images/Spring2022/xcat_gifts-30_0_sp1_ls.jpg"
+                        alt=""></div>
+                <div class="grid11"><img style="height: 250px; width: 320px;"
+                        src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw7fbd598c/images/Spring2022/xcat_gifts-50_0_sp1_ls.jpg"
+                        alt=""></div>
+            </div>
+            <p style="padding-left: 30px;"><img class="img"
+                    src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw4656efd7/images/Spring2022/xcat_giftcards_0_sp1_lb.jpg"
+                    alt=""></p>
+            <div class="grid">
+                <div>SHOP GIFT CARDS</div>
+                <div>SHOP E-GIFT CARDS</div>
+            </div>
+            <p class="main_p">Gifts From Bath & Body Works</p>
+            <div class="grid1">Bath & Body Works is here to help you find the perfect gift for every occasion. Gifts for
+                her, gifts
+                for him—we’ve got the gifting goodies that will make them feel extra-special all year long. Need a
+                birthday gift? Here’s a bright idea. After the cake, give your fragrance-loving birthday gal or guy the
+                candles they REALLY want—their favorite 3-wicks! Cupid is always in our building! Take aim for our
+                Valentine’s Day gifts & get most-loved fragrances for the special gals (“galentines”) & special guys you
+                hold nearest & dearest. Looking for Mother’s Day gifts? Our DIY gift baskets & fragrance gift sets are a
+                great place to start. Combine Mom’s favorite home fragrances with some skin-nourishing body care, and
+                she’s sure to feel appreciated. Time to freshen up your annual Father’s Day gift! How? Trade that
+                Father’s Day tie for Father’s Day fragrances. Dad has neckwear to spare—he deserves to enjoy his
+                favorite scents, too! Shop gifts for men via our C.O. Bigelow or Bath & Body Works Men’s collections.
+                Merry Christmas to you & yours! The most wonderful time of the year wouldn’t be the same without
+                seasonal scents from Bath & Body Works. Stuff their stockings with jolly-good faves and place our best
+                in body care & home fragrance next to the tree. Get more inspiration for the holiday in our Christmas
+                Gift Guide. Speaking of magical holidays, our Easter gifts are just as festive! Fill their baskets with
+                all of the above & they’ll be hopping, skipping & jumping for joy. Wedding gifts? Of course! Here come
+                the bride’s favorite fragrances! Anniversary gifts? We’ve got those, too! Either way, we have
+                housewarming scents—hint, hint, Wallflowers!—that will keep every house feeling like home.</div>
+        </div>
+
+    </div>
+
+
+    <footer id="container">
+
+        <div class="box" id="box-1">
+            <p style="margin-bottom: 20px;">Get email offers & the latest news from Bath & Body Works!</p>
+            <p class="enter">
+                Enter Email
+            </p>
+            <p><input type="text" name="" class="first"><img class="icon"
+                    src="https://cdn.pixabay.com/photo/2016/03/31/19/13/information-1294813_960_720.png" alt=""></p>
+            <p class="enter1" style="margin-left: 5px; margin-top: 10px;">
+                Confirm Email
+            </p>
+            <p><input type="text" name="" class="first"><button class="btn">Submit</button></p>
+            <p style="margin-top:20px; margin-left: 5px; font-size: 20px;">Get Connected </p>
+            <p><img class="icon" src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_960_720.png"
+                    alt="">
+                <img class="icon" src="https://cdn.pixabay.com/photo/2017/06/22/14/23/twitter-2430933_960_720.png"
+                    alt="">
+                <img class="icon" src="https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814080_960_720.png"
+                    alt="">
+                <img class="icon" src="https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338432_960_720.png"
+                    alt="">
+                <img class="icon" src="https://cdn.pixabay.com/photo/2017/06/23/02/35/youtube-2433301_960_720.png"
+                    alt="">
+                <img class="icon" src="https://cdn.pixabay.com/photo/2013/04/01/21/31/parking-99212_960_720.png" alt="">
+            </p>
+        </div>
+        <div class="box" id="box-2">
+            <p style="color: black;">CUSTOMER CARE</p>
+            <p>HELP & FAQ</p>
+            <p>Live Chat 8a - 12a ET</p>
+            <p>Shipping</p>
+            <p>Returns & Exchanges</p>
+            <p>Order Tracking</p>
+            <p>Corporate Sales & Gifts</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="box" id="box-3">
+            <p style="color: black;">MY ACCOUNT</p>
+            <p>Sign In or Sign Up</p>
+            <p>Order Tracking</p>
+            <p>My Auto Refresh</p>
+            <p>My Love-It List</p>
+        </div>
+        <div class="box" id="box-4">
+            <p style="color: black;">DISCOVER</p>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Gift Cards</p>
+            <p>Shop by Fragrance</p>
+            <p>Product Ingredients</p>
+            <p>Get Inspired</p>
+            <p>Diversity, Equity & Inclusion</p>
+            <p><img id="make"
+                    src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0c8e6af7/images/evergreen/Happiness_Guaranteedtimes2_v2.jpg?yocs=o_s_"
+                    alt=""></p>
+        </div>
+        <div class="box" id="box-5">
+            <p>FIND US</p>
+            <p>Store Locator</p>
+            <p>Global Location</p>
+        </div>
+
+
+    </footer>
+    <div class="one">
+        <div>
+            <p class="last">Terms Of Use &nbsp | &nbsp Privacy Policy &nbsp | &nbsp Security Bug Report &nbsp | &nbsp
+                California
+                Privacy Rights &nbsp | &nbsp Do Not Sell My Personal Information (California) &nbsp | &nbsp Transparency
+                in Supply Chains &nbsp | &nbsp Ad Preferences </p>
+        </div>
+        <div style="margin-top: 30px;">© 2022 Bath & Body Works Direct, Inc. All Rights Reserved.</div>
+    </div>
+</body>
+
+</html>
