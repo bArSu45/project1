@@ -1,0 +1,212 @@
+*{
+    /* margin: 0px;
+    padding: 0px; */
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+}
+#topopenpage{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid black; */
+    background-color: white;
+    padding-left: 20px;
+    /* margin-top: 30px; */
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+#container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+}
+#container_1{
+    width: 18%;
+    height: auto;
+    /* border: 1px solid rgb(230, 213, 213); */
+}
+#container_2{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid blue; */
+    background-color: rgb(255, 255, 255);
+}
+#sidemenu_id{
+    width: 75%;
+    height: auto;
+    /* border: 1px solid black;  */
+}
+#topopenpage{
+    display: flex;
+    gap: 10px;
+    margin-top: -10px;
+}
+/* hsfooseuiq */
+#sidemenu_id>div>h3{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#sidemenu_id>div>p>a{
+    line-height: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+
+
+/* Second DIV Propertis */
+
+
+
+
+
+
+#filters>select{
+    padding: 5px 40px 5px 0px;
+    border: 3px solid black;  
+    border-top:grey ;
+    border-left: grey;
+    border-right: grey;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+
+/*#products{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(13,350px);
+    gap: 10px;
+}
+#products>div{
+    border: 1px solid red;
+} */
+
+
+
+
+
+
+
+#container_2>div>h1{
+    /* Hand Soaps & Sanitizers */
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 21px;
+    line-height: 1.3125rem;
+    color: rgb(75, 75, 75);
+    margin: 1.25rem 0;
+    margin-top: 9px;
+    font-weight: 400;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.625em;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+        /* Products Side Page */
+        /* Products Side Page */
+        /* Products Side Page */
+        /* Products Side Page */
+
+        #secondProduct{
+            display: flex;
+            justify-content: center;
+        }
+        #secondProduct{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(13.5, 400px);
+            gap: 10px;
+        }
+        #secondProduct>div{
+            
+            /* border: 1px solid rgb(38, 33, 43); */
+        }
+        #secondProduct>div>img{
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            width: 50%;
+            height: 50%;
+        }
+        #secondProduct>div>img+h3{
+            text-align: center;
+        }
+        #secondProduct>div>p{
+            margin-top: -15px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        #secondProduct>div>p+h3{
+            margin-top: -15px;
+            text-align: center;
+        }
+        #secondProduct>div>p+h3+p{
+            color: red;
+            font-size: 10px;
+        }
+        #secondProduct>div>button{
+            display:block;
+            margin: auto;
+            margin-top: -5px;
+            padding: 7px 55px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border: 0px ;
+        }
+        #secondProduct>div>button:hover{
+            background-color: white;
+            color: black;
+        }
+        #secondProduct>div>img:nth-child(3){
+            height: 100%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.paras>a{ 
+    /* text-decoration: none; */
+    /* color: black; */
+}
+#paraDiv>p>a{
+    color: grey;
+}
+#paraDiv>p{
+
+    color: grey;
+    line-height: 23px;
+    width: 80%;
+    font-size: 13px;
+}

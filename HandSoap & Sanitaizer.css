@@ -1,0 +1,177 @@
+*{
+    /* margin: 0px;
+    padding: 0px; */
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+}
+#topopenpage{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid black; */
+    background-color: white;
+    padding-left: 20px;
+    /* margin-top: 30px; */
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+#container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+}
+#container_1{
+    width: 18%;
+    height: auto;
+    /* border: 1px solid rgb(230, 213, 213); */
+}
+#container_2{
+    width: 80%;
+    height: 1800px;
+    /* border: 1px solid blue; */
+    background-color: rgb(255, 255, 255);
+}
+#sidemenu_id{
+    width: 75%;
+    height: auto;
+    /* border: 1px solid black;  */
+}
+#topopenpage{
+    display: flex;
+    gap: 10px;
+    margin-top: -10px;
+}
+/* hsfooseuiq */
+#sidemenu_id>div>h3{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#sidemenu_id>div>p>a{
+    line-height: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+
+
+/* Second DIV Propertis */
+
+#container_2>div>h1{
+    /* Hand Soaps & Sanitizers */
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 21px;
+    line-height: 1.3125rem;
+    color: rgb(75, 75, 75);
+    margin: 1.25rem 0;
+    margin-top: 9px;
+    font-weight: 400;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.625em;
+    margin-bottom: 20px;
+}
+.img>img{
+    width: 100%;
+
+}
+#container_2>h4{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid black; 
+    line-height: 0.1em;
+    margin: 40px 0 30px;
+    font-family: Trade Gothic W01 Bold_2,Arial,sans-serif;
+} 
+#container_2>h4 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+#shoping{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+#shoping{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat(1,350px);
+    gap: 10px;
+}
+#shoping>div{
+    /* border: 1px solid black; */
+}
+#shoping>div>img{
+    width: 100%;
+}
+/* #shoping>div>button{
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid black;
+    background-color: #fff;
+    cursor: pointer;
+} */
+#shoping>div>div:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-decoration: #fff;
+}
+#shoping>div>div{
+    font-size: 12px;
+    width: 50%;
+    padding: 8px 35px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    border: 3px solid black;
+}
+#shoping>div>div>a{
+    font-family: Trade Gothic W01 Bold_2,Arial,sans-serif;
+    letter-spacing: .999px;
+    text-decoration: none;
+    color:black;
+    box-sizing: border-box;
+}
+#shoping>div>div>a:hover{
+    color: #fff;
+}
+#feel_good_banner{
+    width: 98%;
+    height: 480px;
+    /* border: 1px solid red;    */
+    margin: auto;
+    margin-top: 40px;
+    /* margin-bottom: 20px; */
+}
+#feel_good_banner:hover{
+    /* border: 1px dotted; */
+}
+#feel_good_banner>img{
+    width: 100%;
+}
+#container_2>h2>span{
+    margin-top: 20px;
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    line-height: 1.125;
+    font-size: 1.5rem;
+    text-transform: none;
+}
+.paras>a{ 
+    /* text-decoration: none; */
+    /* color: black; */
+}
+#paraDiv>p>a{
+    color: grey;
+}
+#paraDiv>p{
+    
+    color: grey;
+    line-height: 23px;
+    width: 80%;
+    font-size: 13px;
+}
